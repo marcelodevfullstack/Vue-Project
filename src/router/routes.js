@@ -7,31 +7,32 @@ import ControleDeClientes from '@/views/ControleDeClientes.vue';
 
 const routes = [
     {
-      path: '/login',
-      name: 'Login',
-      component: Login,
-      title: 'Dashboard'
-      meta: { requiredAuth: false }
+        path: '/login',
+        name: 'Login',
+        component: Login,
+        title: 'Login',
+        meta: {requiredAuth:false}   
     },
     {
         path: '/',
         name: 'Dashboard',
         component: Dashboard,
-        title: 'Login'
-        meta: { requiredAuth: true }
-      },
+        title: 'Dashboard',
+        meta: {requiredAuth: true}
+        
+    },
     {
         path: '/controle-de-produtos',
         name: 'ControleDeProdutos',
         component: ControleDeProdutos,
-        title: 'Produtos'
+        title: 'Produtos',
         meta: { requiredAuth: true }
     },
     {
         path: '/controle-de-clientes',
         name: 'ControleDeClientes',
         component: ControleDeClientes,
-        title: 'Clientes'
+        title: 'Clientes',
         meta: { requiredAuth: true }
     }
    
